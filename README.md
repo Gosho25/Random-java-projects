@@ -1,1 +1,1 @@
-# Random-java-projects(for fun or practice)
+# For fun or practice(ignore the names)
