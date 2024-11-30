@@ -3,12 +3,12 @@ import java.util.Arrays;
 public class FixKoparanov {
     public static void main(String[] args) {
         String[] list = new String[31];
-        list[0] = "Александрър";
-        list[1] = "Александър2";
-        list[2] = "Борис";
-        list[3] = "==========";
-        list[4] = "Георги";
-        list[5] = "Давид";
+        list[0] = "Student1";
+        list[1] = "Student2";
+        list[2] = "Student3";
+        list[3] = "===== (Student4 left school) :( =====";
+        list[4] = "";
+        list[5] = "";
         list[6] = "";
         list[7] = "";
         list[8] = "";
@@ -32,7 +32,7 @@ public class FixKoparanov {
         list[26] = "";
         list[27] = "";
         list[28] = "";
-        list[29] = "Алекзандър";
+        list[29] = "";
 
         /*
         Добави имената
