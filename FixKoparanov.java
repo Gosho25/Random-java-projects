@@ -7,58 +7,33 @@ public class FixKoparanov {
         list[1] = "Student2";
         list[2] = "Student3";
         list[3] = "===== (Student4 left school) :( =====";
-        list[4] = "";
-        list[5] = "";
-        list[6] = "";
-        list[7] = "";
-        list[8] = "";
-        list[9] = "";
-        list[10] = "";
-        list[11] = "";
-        list[12] = "";
-        list[13] = "";
-        list[14] = "";
-        list[15] = "";
-        list[16] = "";
-        list[17] = "";
-        list[18] = "";
-        list[19] = "";
-        list[20] = "";
-        list[21] = "";
-        list[22] = "";
-        list[23] = "";
-        list[24] = "";
-        list[25] = "";
-        list[26] = "";
-        list[27] = "";
-        list[28] = "";
-        list[29] = "";
+        list[4] = "Student5";
+        list[5] = "Student6";
+        list[6] = "Student7";
+        list[7] = "Student8";
+        list[8] = "Student9";
+        list[9] = "Student10";
+        list[10] = "Student11";
+        list[11] = "Student12";
+        list[12] = "Student13";
+        list[13] = "Student14";
+        list[14] = "Student15";
+        list[15] = "Student16";
+        list[16] = "Student17";
+        list[17] = "Student18";
+        list[18] = "Student19";
+        list[19] = "Student20";
+        list[20] = "Student21";
+        list[21] = "Student22";
+        list[22] = "Student23";
+        list[23] = "Student24";
+        list[24] = "Student25";
+        list[25] = "Student26";
+        list[26] = "Student27";
+        list[27] = "Student28";
+        list[28] = "Student29";
+        list[29] = "Student30";
 
-        /*
-        Добави имената
-        провери интерациите list.leght - 1
-        напиши отсиствията
-         */
     }
-     /*
-    public static int[] removeElement(int[] originalArray, int indexToRemove) {
-        if (indexToRemove < 0 || indexToRemove >= originalArray.length) {
-            return originalArray;  // Ако индексът е невалиден, връщаме оригиналния масив
-        }
-
-        // Създаваме нов масив с размер -1
-        int[] newArray = new int[originalArray.length - 1];
-
-        // Копираме елементите от оригиналния масив в новия масив, пропускайки елемента на дадения индекс
-        for (int i = 0, j = 0; i < originalArray.length; i++) {
-            if (i == indexToRemove) {
-                continue; // Пропускаме елемента на индекс 'indexToRemove'
-            }
-            newArray[j++] = originalArray[i];
-        }
-
-        return newArray;
-    }
-    */
 
 }
