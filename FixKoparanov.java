@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class FixKoparanov {
     public static void main(String[] args) {
-        String[] list = new String[31];
+        String[] list = new String[30];
         list[0] = "Student1";
         list[1] = "Student2";
         list[2] = "Student3";
