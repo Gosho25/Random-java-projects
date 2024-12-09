@@ -34,9 +34,16 @@ public class FixKoparanov {
         list[28] = "Student29";
         list[29] = "Student30";
 
-            for(int i = 0; i < list.length -1; i++){
-                //remove missing students(random students)
+
+        for(int i = 0;i < list.length;i++){
+            if(list[i] == "Отсъства"){
+                continue;
+            }
+            System.out.println(Arrays.stream(list).toList());
         }
+        System.out.println();
+        System.out.println(Arrays.toString(list));
+
     }
 
 }
