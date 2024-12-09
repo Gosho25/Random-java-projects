@@ -11,14 +11,14 @@ public class FixKoparanov {
         list[5] = "Student6";
         list[6] = "Student7";
         list[7] = "Student8";
-        list[8] = "Student9";
+        list[8] = "Отсъства";
         list[9] = "Student10";
         list[10] = "Student11";
         list[11] = "Student12";
         list[12] = "Student13";
         list[13] = "Student14";
         list[14] = "Student15";
-        list[15] = "Student16";
+        list[15] = "Отсъства";
         list[16] = "Student17";
         list[17] = "Student18";
         list[18] = "Student19";
@@ -30,7 +30,7 @@ public class FixKoparanov {
         list[24] = "Student25";
         list[25] = "Student26";
         list[26] = "Student27";
-        list[27] = "Student28";
+        list[27] = "Отсъства";
         list[28] = "Student29";
         list[29] = "Student30";
 
