@@ -35,14 +35,17 @@ public class FixKoparanov {
         list[29] = "Student30";
 
 
-        for(int i = 0;i < list.length;i++){
-            if(list[i] == "Отсъства"){
-                continue;
+        StringBuilder nonAbsentStudents = new StringBuilder();
+        
+        for (int i = 0; i < list.length; i++) {
+            if (!Objects.equals(list[i], "Отсъства")) {
+                // Append to the result string if not "Отсъства"
+                nonAbsentStudents.append(list[i]).append(", ");
             }
-            System.out.println(Arrays.stream(list).toList());
         }
-        System.out.println();
-        System.out.println(Arrays.toString(list));
+
+        // Output the students who are not "Отсъства"
+        System.out.println("Students: " + nonAbsentStudents.toString().replaceAll(", $", ""));
 
     }
 
