@@ -23,5 +23,6 @@ class Result{
         Arithmetic result = new Arithmetic(2, 2);
         result.sum();
         result.difference();
+        result.multiplication();
     }
 }
