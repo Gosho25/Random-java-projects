@@ -12,6 +12,9 @@ public class Arithmetic {
     public void difference(){
         System.out.println(num1 - num2);
     }
+    public void multiplication(){
+        System.out.println(num1 * num2);
+    }
     
 }
 
