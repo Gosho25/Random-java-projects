@@ -31,5 +31,6 @@ class Result{
         result.sum();
         result.difference();
         result.multiplication();
+        result.division();
     }
 }
