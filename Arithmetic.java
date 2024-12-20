@@ -15,6 +15,13 @@ public class Arithmetic {
     public void multiplication(){
         System.out.println(num1 * num2);
     }
+    public void division(){
+        if(num2 == 0){
+            System.out.println("Error, division by zero");
+        }else{
+            System.out.println(num1 / num2);
+        }
+    }
     
 }
 
