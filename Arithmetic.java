@@ -9,6 +9,9 @@ public class Arithmetic {
     public void sum(){
         System.out.println(num1 + num2);
     }
+    public void difference(){
+        System.out.println(num1 - num2);
+    }
     
 }
 
@@ -16,5 +19,6 @@ class Result{
     public static void main(String[] args) {
         Arithmetic result = new Arithmetic(2, 2);
         result.sum();
+        result.difference();
     }
 }
