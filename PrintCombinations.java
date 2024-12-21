@@ -1,51 +1,48 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Collections;
 
 class PrintCombinations {
+
+    // This function is the entry point for the combination generation
     public static void printCombinations(int num) {
-        List<Integer> combination = new ArrayList<>();
-        findCombinations(num, 1, combination);
+        List<List<Integer>> allCombinations = new ArrayList<>();
+        List<Integer> currentCombination = new ArrayList<>();
+
+        // Start the combination finding process
+        findCombinations(num, num, currentCombination, allCombinations);
+
+        // Print the number (this is the first line of the output)
+        System.out.println(num);
+
+        // Print each combination in the required reverse order
+        for (int i = allCombinations.size() - 1; i >= 0; i--) {
+            List<Integer> combination = allCombinations.get(i);
+            for (int number : combination) {
+                System.out.print(number + " ");
+            }
+            System.out.println(); // Move to the next line after printing each combination
+        }
     }
 
-    // Recursive function to find all combinations
-    private static void findCombinations(int target, int start, List<Integer> combination) {
-        // If the target sum is 0, print the current combination
+    // Recursive function to find all valid combinations that sum to 'target'
+    private static void findCombinations(int target, int currentNum, List<Integer> currentCombination, List<List<Integer>> allCombinations) {
+        // Base case: if the target is 0, we found a valid combination
         if (target == 0) {
-            // Print the combination in the required order
-            List<Integer> reversedCombination = new ArrayList<>(combination);
-            Collections.reverse(reversedCombination); // Reverse the combination to match expected order
-            for (int i = 0; i < reversedCombination.size(); i++) {
-                System.out.print(reversedCombination.get(i));
-                if (i < reversedCombination.size() - 1) {
-                    System.out.print(" ");
-                }
-            }
-            System.out.println(); // To move to the next line after printing a combination
+            allCombinations.add(new ArrayList<>(currentCombination)); // Store the combination
             return;
         }
 
-        // Explore all numbers starting from 'start' to 'target'
-        for (int i = start; i <= target; i++) {
-            // If the current number is less than or equal to the remaining target, add it to the combination
-            combination.add(i);
-            // Recurse with the reduced target and the current number
-            findCombinations(target - i, i, combination);
-            // Backtrack by removing the last number
-            combination.remove(combination.size() - 1);
+        // Start from 'currentNum' and go down to 1 to prevent duplicates
+        for (int i = currentNum; i >= 1; i--) {
+            if (i <= target) {  // Only proceed if 'i' is within the remaining target
+                currentCombination.add(i); // Add 'i' to the current combination
+                findCombinations(target - i, i, currentCombination, allCombinations); // Recur with the reduced target
+                currentCombination.remove(currentCombination.size() - 1); // Backtrack
+            }
         }
     }
 
     public static void main(String[] args) {
-        // Test cases
-        printCombinations(6);
-        System.out.println();
-        printCombinations(2);
-        System.out.println();
-        printCombinations(3);
-        System.out.println();
         printCombinations(5);
-        System.out.println();
-        printCombinations(4);
     }
 }
