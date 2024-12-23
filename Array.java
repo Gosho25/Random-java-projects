@@ -7,6 +7,6 @@ public class Array {
         System.out.print(", ");
         System.out.print(coolNums[1]);  
         System.out.print(", ");
-        System.out.print(coolNums[2]);
+        System.out.print(coolNums[2]); 
     }
 }
