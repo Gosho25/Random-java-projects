@@ -5,7 +5,7 @@ public class Array {
 
         System.out.print(coolNums[0]); 
         System.out.print(", ");
-        System.out.print(coolNums[1]);
+        System.out.print(coolNums[1]); 
         System.out.print(", ");
         System.out.print(coolNums[2]);
     }
