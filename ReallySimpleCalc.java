@@ -16,7 +16,11 @@ public class ReallySimpleCalc {
         }else if(op == '*'){
             res = n1 * n2;
         }else if(op == '/'){
-            res = n1 / n2;
+            if(n2 == 0){
+                System.out.pintln("ERROR");
+            }else{
+                res = n1 / n2;
+            }
         }else{
             res = 0;
         }
