@@ -4,3 +4,4 @@ public class AFunc {
         System.out.println(arr[2]);  
     }  
 }  
+ 
