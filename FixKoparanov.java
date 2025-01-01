@@ -4,7 +4,7 @@ public class FixKoparanov {
     public static void main(String[] args) {
         ArrayList<String> cl222 = new ArrayList<>();
         cl222.add("S1");
-        cl222.add("S2");
+        cl222.add("S2"); 
         cl222.add("S3");
         cl222.add("==");
         cl222.add("S5");
