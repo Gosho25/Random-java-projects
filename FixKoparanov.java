@@ -34,6 +34,8 @@ public class FixKoparanov {
         cl222.add("S29");
         cl222.add("S30");
 
+        //add for-each loop
+
     }
 
 }
