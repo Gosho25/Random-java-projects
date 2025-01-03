@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class FixKoparanov {
+public class FixKoparanov { 
     public static void main(String[] args) {
         ArrayList<String> cl222 = new ArrayList<>();
         cl222.add("S1");
