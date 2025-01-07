@@ -1,15 +1,12 @@
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class FindTrue {
-    public static int countTrue(boolean[] list){
-        int counter = 0;
-        for(int detected = 0; detected < list.length;detected++){
-            if(list[detected] == true){
-                counter++;
-            }
-            else {
-                continue;
-            }
-        }
-        return counter;
+    public static void main(String[] args) {
+        ArrayList<Boolean> list = new ArrayList<>();
+        //add USER INPUT boolean stoinosti
+        
     }
 }
 
