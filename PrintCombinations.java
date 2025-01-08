@@ -1,48 +1,59 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 class PrintCombinations {
 
-    // This function is the entry point for the combination generation
-    public static void printCombinations(int num) {
-        List<List<Integer>> allCombinations = new ArrayList<>();
-        List<Integer> currentCombination = new ArrayList<>();
+    // This function will be invoked by Coddy to test your solution
+    public static void printCombinations(int n) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> combination = new ArrayList<>();
+        // Start recursion with the largest possible number and work downwards
+        findCombinations(n, combination, n, result);
 
-        // Start the combination finding process
-        findCombinations(num, num, currentCombination, allCombinations);
-
-        // Print the number (this is the first line of the output)
-        System.out.println(num);
-
-        // Print each combination in the required reverse order
-        for (int i = allCombinations.size() - 1; i >= 0; i--) {
-            List<Integer> combination = allCombinations.get(i);
-            for (int number : combination) {
-                System.out.print(number + " ");
+        // Sort the combinations lexicographically
+        Collections.sort(result, (a, b) -> {
+            for (int i = 0; i < Math.min(a.size(), b.size()); i++) {
+                if (a.get(i) != b.get(i)) {
+                    return a.get(i) - b.get(i); // Compare elements to sort lexicographically
+                }
             }
-            System.out.println(); // Move to the next line after printing each combination
+            return a.size() - b.size(); // If they are the same up to the smallest size, compare by size
+        });
+
+        // Print the combinations
+        for (List<Integer> comb : result) {
+            for (int i = 0; i < comb.size(); i++) {
+                if (i != 0) {
+                    System.out.print(" ");
+                }
+                System.out.print(comb.get(i));
+            }
+            System.out.println();
         }
     }
 
-    // Recursive function to find all valid combinations that sum to 'target'
-    private static void findCombinations(int target, int currentNum, List<Integer> currentCombination, List<List<Integer>> allCombinations) {
-        // Base case: if the target is 0, we found a valid combination
-        if (target == 0) {
-            allCombinations.add(new ArrayList<>(currentCombination)); // Store the combination
+    // Recursive function to find all valid combinations
+    private static void findCombinations(int n, List<Integer> combination, int start, List<List<Integer>> result) {
+        // If the remaining sum is zero, add the current combination to the result
+        if (n == 0) {
+            result.add(new ArrayList<>(combination)); // Add a copy of the combination
             return;
         }
 
-        // Start from 'currentNum' and go down to 1 to prevent duplicates
-        for (int i = currentNum; i >= 1; i--) {
-            if (i <= target) {  // Only proceed if 'i' is within the remaining target
-                currentCombination.add(i); // Add 'i' to the current combination
-                findCombinations(target - i, i, currentCombination, allCombinations); // Recur with the reduced target
-                currentCombination.remove(currentCombination.size() - 1); // Backtrack
+        // Try numbers from 'start' down to 1 to ensure reverse order
+        for (int i = start; i >= 1; i--) {
+            // If adding 'i' doesn't exceed the remaining sum, continue
+            if (i <= n) {
+                combination.add(i);  // Add number 'i' to the combination
+                findCombinations(n - i, combination, i, result);  // Recurse with the reduced sum, allowing repetition of 'i'
+                combination.remove(combination.size() - 1);  // Backtrack by removing the last added number
             }
         }
     }
+}
 
+class COMBO {
     public static void main(String[] args) {
-        printCombinations(5);
+        // Example usage
+        PrintCombinations.printCombinations(4);
     }
 }
