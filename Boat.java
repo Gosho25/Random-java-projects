@@ -6,7 +6,7 @@ public class Boat {
     public static int zelka = 3; // ZELKA :: ако е на ЛЕВИЯ БРЯГ е 3 = ако е на ДЕСНИЯ БРЯГ е 30 (т.е. 3 * 10);
 
     public static boolean answer = true;
-
+ 
     public static void main(String[] args) {
 
 
