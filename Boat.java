@@ -2,7 +2,7 @@ public class Boat {
 
     // Define global variables
     public static int vulk = 1; // VULK :: ако е на ЛЕВИЯ БРЯГ е 1 = ако е на ДЕСНИЯ БРЯГ е 10 (т.е. 1 * 10);
-    public static int koza = 2; // KOZA :: ако е на ЛЕВИЯ БРЯГ е 2 = ако е на ДЕСНИЯ БРЯГ е 20 (т.е. 2 * 10);
+    public static int koza = 2; // KOZA ::  ако е на ЛЕВИЯ БРЯГ е 2 = ако е на ДЕСНИЯ БРЯГ е 20 (т.е. 2 * 10);
     public static int zelka = 3; // ZELKA :: ако е на ЛЕВИЯ БРЯГ е 3 = ако е на ДЕСНИЯ БРЯГ е 30 (т.е. 3 * 10);
 
     public static boolean answer = true;
