@@ -9,7 +9,7 @@ public class Boat {
  
     public static void main(String[] args) {
  
-
+ 
         // проверка дали всички са прехвърлени на десния бряг
         while (vulk == 1 || koza == 2 || zelka == 3) {
 
