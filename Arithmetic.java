@@ -5,7 +5,7 @@ public class Arithmetic {
     public Arithmetic(int num1, int num2){// 2 i 2
         this.num1 = num1;//this 1 = 2
         this.num2 = num2; 
-    }
+    } 
     public void sum(){
         System.out.println(num1 + num2);
     }
