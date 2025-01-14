@@ -13,7 +13,7 @@ public class Arithmetic {
         System.out.println(num1 - num2);
     }
     public void multiplication(){
-        System.out.println(num1 * num2);
+        System.out.println(num1 * num2); 
     }
     public void division(){
         if(num2 == 0){
