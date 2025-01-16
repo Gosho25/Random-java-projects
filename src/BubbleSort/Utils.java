@@ -1,7 +1,7 @@
 package BubbleSort;
 
 public class Utils {
-    public static void BS_FF(int[] myArr) {
+    public static void BS_FF(int[] myArr) { 
         for(int i = 0; i <= myArr.length-1; i++){
   
             for(int j = 0; j <= myArr[i]; j++){
