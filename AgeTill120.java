@@ -10,4 +10,4 @@ public class AgeTill120 {
         int till120 = 100 - age;
         System.out.println(till120);
     }
-}
+} 
