@@ -8,7 +8,7 @@ class Animal {
     }
 } 
  
-class Main2 {
+class Main2 { 
     public static void main(String[] args) {
         Animal cow = new Animal("cow", "Moo");
         Animal dog = new Animal("dpg", "Woof");
