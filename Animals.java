@@ -7,7 +7,7 @@ class Animal {
         this.voice = voice;
     }
 }
-
+ 
 class Main2 {
     public static void main(String[] args) {
         Animal cow = new Animal("cow", "Moo");
