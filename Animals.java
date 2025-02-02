@@ -5,7 +5,7 @@ class Animal {
     public Animal(String type, String voice) {
         this.type = type;
         this.voice = voice;
-    } 
+    }  
 } 
  
 class Main2 { 
