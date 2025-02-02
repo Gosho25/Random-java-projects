@@ -6,7 +6,7 @@ class Animal {
         this.type = type;
         this.voice = voice;
     }
-}
+} 
  
 class Main2 {
     public static void main(String[] args) {
