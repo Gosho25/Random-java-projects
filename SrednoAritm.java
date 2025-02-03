@@ -8,7 +8,7 @@ public class SrednoAritm {
             int userNum = sc.nextInt();
             sum += userNum; 
         }
-        int result = sum / 5;
+        int result = sum / 5; 
         System.out.println(result);
         //upgrade from 5 to N(user's numbers)
     }
