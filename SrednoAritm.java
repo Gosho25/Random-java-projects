@@ -10,5 +10,6 @@ public class SrednoAritm {
         }
         int result = sum / 5;
         System.out.println(result);
+        //upgrade from 5 to N(user's numbers)
     }
 }
