@@ -6,7 +6,7 @@ public class SrednoAritm {
         int sum = 0;
         for(int i = 1;i <= 5;i++){
             int userNum = sc.nextInt();
-            sum += userNum; 
+            sum += userNum;  
         }
         int result = sum / 5; 
         System.out.println(result);
