@@ -8,6 +8,6 @@ public class AgeTill120 {
         int age = scan.nextInt();  
 
         int till120 = 100 - age;  
-        System.out.println(till120);
+        System.out.println(till120); 
     } 
 } 
