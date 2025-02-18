@@ -8,7 +8,7 @@ public class Arithmetic {
     } 
     public void sum(){
         System.out.println(num1 + num2);
-    } 
+    }  
     public void difference(){
         System.out.println(num1 - num2);
     }
