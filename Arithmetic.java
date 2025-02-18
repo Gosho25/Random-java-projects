@@ -6,7 +6,7 @@ public class Arithmetic {
         this.num1 = num1;//this 1 = 2
         this.num2 = num2;  
     } 
-    public void sum(){
+    public void sum(){ 
         System.out.println(num1 + num2);
     }  
     public void difference(){
