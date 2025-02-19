@@ -1,6 +1,6 @@
 public class Capitalize {
     public static String capitalize(String s) {
-        String[] words = s.split(", "); 
+        String[] words = s.split(", ");  
 
         StringBuilder capitalizedText = new StringBuilder();
 
