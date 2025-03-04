@@ -5,6 +5,6 @@ public class Discount {
 
     public static void main(String[] args) {
         float printing = discount(1500, 0.5f); 
-        System.out.println((int)printing);
+        System.out.println((int)printing); 
     }
 }
